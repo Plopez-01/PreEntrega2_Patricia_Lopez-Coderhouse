@@ -1,9 +1,336 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-body {
-  background-color: aqua;
+.header {
+  background-image: url(imagenes/Bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.barra-de-navegación {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: #faebd7;
+  transition: color 0.5;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.Inicio-Home {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.logo-empresa {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.logoempresa {
+  width: 30px;
+  height: 30px;
+}
+
+.header-contect {
+  width: 30%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.Titulo {
+  color: #faebd7;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.header-txt p {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #faebd7;
+}
+
+.btn-1 {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 12px 45px;
+  border: 1px solid #faebd7;
+  color: #faebd7;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #12bdd9;
+}
+.btn-1:hover,
+.btn-1 a:hover {
+  color: rgba(0, 0, 0, 0.5019607843);
+  background-color: #FF8000;
+}
+
+.general {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.general-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.lorem {
+  width: 396px;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.lorem1 {
+  padding-top: 20px;
+  width: 80%;
+}
+
+.cartas {
+  width: 396px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  border-radius: 30px;
+}
+.cartas img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 30px;
+}
+
+.especial {
+  width: 396px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.nosotros-imagen {
+  object-fit: cover;
+  position: relative;
+  border-radius: 30px;
+  width: 80%;
+  height: 440px;
+}
+
+.txt {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  overflow-wrap: break-word;
+  z-index: 1;
+  color: #faebd7;
+}
+.txt h3 {
+  font-size: 18px;
+  color: #faebd7;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.txt p {
+  color: #faebd7;
+  font-size: 16px;
+}
+
+.inf {
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  overflow-wrap: break-word;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #1b293a;
+}
+
+.info2 {
+  background-image: url(imagenes/Bg-2-y-3.jpg);
+}
+
+.logo {
+  width: 200px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.Texto-Footer {
+  width: 30%;
+  color: #faebd7;
+  text-align: center;
+}
+
+/* Aquí comienza la tercera pagina */
+.Servicios {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.servicios-img {
+  width: 300px;
+  height: 230px;
+  margin-right: 60px;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-titulo {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.parrafo {
+  width: 90%;
+  padding: 1rem;
+}
+
+/* Aquí termina la tercera pagina */
+/* Aquí comienza la tercera pagina */
+.filas {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+}
+
+.Cart {
+  width: 380px;
+  height: 100%;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+
+.tamaño {
+  width: 320px;
+  height: 570px;
+}
+
+/* Aquí termina la cuarta pagina */
+/* Aquí comienza la quinta pagina */
+.Formulario {
+  display: flex;
+}
+.Formulario img {
+  width: 300px;
+  height: 230px;
+  margin-left: 100px;
+}
+
+input[type=text],
+input[type=email] {
+  width: 500px;
+  height: 30px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.titulo {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.comentario {
+  text-align: right;
+}
+.comentario input[type=text] {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 30px;
+}
+.comentario label {
+  padding-top: 20px;
+}
+
+/* Aquí termina la quinta pagina */
+@media (min-width: 425px) {
+  .Titulo {
+    font-size: 2.5rem;
+  }
+  .header-contect {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
