@@ -25,7 +25,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 440px;
+    min-width: 400px;
     text-align: center;
 }
 
@@ -119,7 +120,7 @@ a {
 }
 
 .container {
-    margin: 40px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +266,6 @@ h2 {
 
 .Servicios {
     display: flex;
-    padding-top: $padding-normal;
     padding-bottom: $padding-normal;
 }
 
@@ -275,15 +275,10 @@ h2 {
     margin-right: 60px;
 }
 
-.columna {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero-titulo {
     font-size: 2rem;
     font-weight: 500;
-    padding: 1rem;
+    padding: 0.7rem;
     border: 1px solid $color-negro;
     border-radius: 1rem;
     width: 50%;
@@ -302,8 +297,9 @@ h2 {
 /* Aquí comienza la tercera pagina */
 .filas {
     display: flex;
-    margin: 40px;
+    margin: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Cart {
@@ -329,11 +325,11 @@ h2 {
 /* Aquí comienza la quinta pagina */
 .Formulario {
     display: flex;
+    justify-content: space-between;
 
     img {
-        width: 300px;
+        min-width: 400px;
         height: 230px;
-        margin-left: 100px;
     }
 }
 
@@ -350,13 +346,17 @@ input[type=email] {
     font-weight: 600;
 }
 
+.span {
+    text-align: left;
+}
+
 .comentario {
     text-align: right;
 
     input[type=text] {
         display: flex;
         flex-direction: column;
-        width: 900px;
+        width: 960px;
         height: 30px;
     }
 
@@ -414,13 +414,70 @@ input[type=email] {
         text-align: center;
     }
 
+    .lorem {
+        width: 340px;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+
+    .servicios-img {
+        width: 345px;
+        height: 230px
+    }
+
+    .especial {
+        width: 340px;
+    }
+
+    .hero-titulo {
+        font-size: 1.7rem;
+        font-weight: 400;
+        width: 86%;
+    }
+
+    .parrafo {
+        text-align: center;
+    }
+
+    .cart {
+        margin-top: 30px;
     }
 
     .Servicios {
         flex-wrap: wrap;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 380px;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    .comentario input[type=text] {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 30px;
+    }
+
+    .Formulario {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+
+        img {
+            min-width: 380px;
+            height: 230px;
+            padding-top: 20px;
+        }
     }
 }
